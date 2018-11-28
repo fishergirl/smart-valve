@@ -1,0 +1,48 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.titleLine {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
+  width: 5px;
+  height: 28px;
+  background-color: #0072bc;
+  border-color: #0072bc;
+}
+.contentCard {
+  .extraHandle {
+    float: right;
+    :global {
+      .ant-btn-primary {
+        background-color: #0072bc;
+      }
+    }
+  }
+  :global {
+    .ant-card-bordered {
+      border: none;
+    }
+    .ant-card-head-title {
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+    }
+    .ant-table-thead > tr > th {
+      background-color: #87d8f8;
+      font-weight: bold;
+    }
+    .ant-table-thead .ant-table-thead > tr > th {
+      background-color: #87d8f8;
+    }
+  }
+}
+.prodStatContent {
+  :global {
+    .ant-card-head {
+      background-color: #87d8f8;
+      text-align: center;
+      height: 53px;
+    }
+  }
+}

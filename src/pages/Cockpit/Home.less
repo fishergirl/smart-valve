@@ -1,0 +1,178 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.border {
+  background-color: #08275f;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(90deg,
+    rgba(37, 121, 129, 0.4) 0%,
+    rgba(75, 147, 178, 0.4) 0%,
+    rgba(113, 172, 227, 0.4) 0%,
+    #bee0ff 50%,
+    rgba(113, 172, 227, 0.4) 100%);
+  border-image-slice: 1;
+}
+.line {
+  width: 225px;
+  height: 2px;
+  background-color: #6fdafa;
+}
+.home {
+  min-width: 1440px;
+  background: -webkit-linear-gradient(left, #123d72 , #0a2960); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #123d72 , #0a2960); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #123d72 , #0a2960); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #123d72 , #0a2960); /* 标准的语法（必须放在最后） */
+  li {
+    display: inline-block;
+  }
+  .head {
+    height: 68px;
+    background-image: url("../../assets/head.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    li {
+      height: 40px;
+      line-height: 40px;
+      margin-top: 12px;
+    }
+    :global {
+      .ant-row > div {
+        height: 68px;
+        line-height: 68px;
+        text-align: center;
+        & span {
+          cursor: pointer;
+          padding: 12px;
+          color: #6fdafa;
+          background-image: linear-gradient(
+            #0b2b61,
+            #0b2b61),
+          linear-gradient(
+            #0b2b61,
+            #0b2b61);
+          border-radius: 12px 2px 12px 2px;
+          border: solid 1px rgba(113, 172, 227, 0.48);
+        }
+      }
+    }
+  }
+  .middleLeft {
+    background-image: url("../../assets/bg_map.jpg");
+    background-repeat: no-repeat;
+    padding: 19px;
+    padding-bottom: 15px;
+    height: 100%;
+    .left {
+      width: 421px;
+      height: 100%;
+      position: absolute;
+      .dataItem {
+        background-image: url("../../assets/kaung1.png");
+        background-repeat: no-repeat;
+        width: 301px;
+        height: 100px;
+        margin-bottom: 8px;
+        padding: 10px;
+        p, h2 {
+          margin: 0;
+        }
+        p {
+          font-size: 18px;
+          color: #6fdafa;
+        }
+        h2 {
+          font-size: 38px;
+          color: #d8f6ff;
+          text-align: center;
+          span {
+            font-size: 18px;
+            color: #fff;
+          }
+        }
+      }
+      .productPer {
+        background-image: url("../../assets/kuang2.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 250px;
+        margin-top: 16px;
+        padding: 10px;
+        h2 {
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+    .right {
+      margin-left: 421px;
+      height: 100%;
+    }
+  }
+  .middleRight {
+    height: 100%;
+    .top {
+      height: 66px;
+      line-height: 66px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #fff;
+      text-align: center;
+    }
+    .bottom {
+      height: 530px;
+      padding: 10px;
+    }
+  }
+  .chartTitle {
+    position: absolute;
+  }
+  .chart {
+    padding-top: 36px;
+    width: 100%;
+    height: 100%;
+  }
+  h3 {
+    font-size: 18px;
+    color: #fff;
+    text-indent: 10px;
+    overflow: hidden;
+    span {
+      //float: right;
+      font-size: 14px;
+    }
+  }
+  .bottomLeft {
+    height: 100%;
+    padding: 10px;
+  }
+  .bottomRight {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .home {
+    .head {
+      background-size: 60%;
+      -moz-background-size: 60%;
+      -moz-background-size: 60%;
+      -o-background-size: 60%;
+      :global {
+        .ant-row > div {
+          & span {
+            padding: 8px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .middleRight {
+      .top {
+        font-size: 14px;
+      }
+    }
+  }
+}
